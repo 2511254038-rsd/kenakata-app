@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
@@ -29,9 +30,18 @@ export default function Navbar() {
   return (
     <header className="sticky top-0 z-50 bg-white border-b border-slate-200">
       <nav className="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between">
-        <Link href="/" className="text-xl font-bold text-indigo-600">
+        {/* <Link href="/" className="text-xl font-bold text-indigo-600">
           Dev<span className="text-slate-900">Blog</span>
-        </Link>
+        </Link> */}
+<Link href="/">
+  <Image
+    src="https://your-image-url.com/logo.png"
+    alt="Logo"
+    width={45}
+    height={45}
+    className="rounded-full"
+  />
+</Link>
 
         <div className="flex items-center gap-2 sm:gap-4">
           <Link href="/" className="text-sm font-medium text-slate-600 hover:text-indigo-600 transition">Home</Link>
