@@ -15,13 +15,12 @@ const app = express();
 // The origin MUST be your exact frontend URL (not "*") for cookies to work.
 app.use(
   cors({
-    origin: [
-      // "http://localhost:3000",
-      "https://kenakata-app.vercel.app",
-    ],
+    // origin : "http://localhost:3000", //Development frontend URL
+    origin: "https://kenakata-app.vercel.app", //Production frontend URL
     credentials: true,
   })
 );
+
 app.use(express.json());   // read JSON bodies from requests
 app.use(cookieParser());   // read cookies into req.cookies
 
