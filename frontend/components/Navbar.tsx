@@ -35,10 +35,10 @@ export default function Navbar() {
         </Link> */}
 <Link href="/">
   <img
-    src="https://your-image-url.com/logo.png"
+    src="/kenakata_app.png"
     alt="Logo"
-    width={45}
-    height={45}
+    width={180}
+    height={175}
     className="rounded-full"
   />
 </Link>
