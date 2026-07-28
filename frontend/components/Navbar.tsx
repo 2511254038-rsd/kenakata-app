@@ -34,7 +34,7 @@ export default function Navbar() {
           Dev<span className="text-slate-900">Blog</span>
         </Link> */}
 <Link href="/">
-  <Image
+  <img
     src="https://your-image-url.com/logo.png"
     alt="Logo"
     width={45}
