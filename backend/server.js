@@ -15,7 +15,8 @@ const app = express();
 // The origin MUST be your exact frontend URL (not "*") for cookies to work.
 app.use(
   cors({
-    origin: process.env.CLIENT_URL || "http://localhost:3000",
+    // origin: process.env.CLIENT_URL || "http://localhost:3000", //local development
+    origin: process.env.CLIENT_URL || "https://kenakata-app.vercel.app", //production
     credentials: true,
   })
 );
